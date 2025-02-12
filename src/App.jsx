@@ -1,4 +1,4 @@
-import React from 'react'
+import Search from './components/Search';
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
           </h1>
         </header>
 
-        <p>Search</p>
+        <Search />
       </div>
     </main>
   );
