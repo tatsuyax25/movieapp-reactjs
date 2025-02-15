@@ -7,6 +7,12 @@ const MovieCard = ({ movie: { title, vote_average, poster_path, release_date, or
 
       <div className='mt-4'>
         <h3>{title}</h3>
+
+        <div className='content'>
+          <div className='rating'>
+            <img src='/star.svg' alt='Star Icon' />
+          </div>
+        </div>
       </div>
     </div>
   );
