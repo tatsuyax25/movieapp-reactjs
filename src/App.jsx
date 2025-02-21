@@ -51,7 +51,9 @@ const App = () => {
 
       setMovieList(data.results || []);
 
-      updateSearchCount();
+      if (query && data.results.length > 0) {
+        await updateSearchCount(query, data.results[0]);
+      }
     } catch (error) {
       console.error(`Error searching movies: ${error}`);
       setErrorMessage("An error occurred while searching for movies.");
